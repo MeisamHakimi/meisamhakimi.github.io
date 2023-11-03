@@ -1,0 +1,124 @@
+h1 {
+    background-color: grey;
+    color: white;
+    padding: 50px;
+    margin: 50px;
+    font-size: xxx-large;
+ }
+ a {
+     color: black;
+     border-width: 2px;
+     border-color: black;
+     border-style: dotted;
+     font-size: x-large;
+ }
+
+a:link{
+    color: black;
+    font-size: xx-large;
+}
+
+a:active{
+    color: black;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    font-size: xxx-large;
+}
+
+a:visited{
+    font-size: x-small;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    border: 5px blue solid;
+    margin: 2px 8px 14px 20px;
+}
+#welcome {
+    border: 50px;
+    border-color: black;
+    border: dashed;
+    color: black;
+}
+
+#welcome:hover {
+    border: 50px;
+    border-color: blue;
+    border: solid;
+    color: white;
+}
+
+#welcome:focus {
+    border: none;
+    color: red;
+}
+
+
+
+ .item {
+     background-color: aquamarine;
+     border-width: 5px;
+     border-color: black;
+     border-top-style: double;
+     border-right-style: dashed;
+     border-bottom-style: dotted;
+     border-left-style: none;
+     font-size: 100%; 
+ }
+ .service {
+     border-width: 10px;
+     border-color: black;
+     border-style: double dashed dotted none;
+     font-size: small;
+
+ }
+ #address {
+     border-width: 2px;
+     border-color: black;
+     border-style: ridge;
+     font-size: smaller;
+ }
+h1, head, .service{
+    background-color: lightgrey;
+}
+
+section p {
+  background-color: green;
+  font-size: 30px;
+}
+section > p {
+    background-color: yellow;
+    font-size: 2em;
+}
+p {
+     padding-left: 24px;
+     font-size: 0.8em;
+}
+h1 + p {
+  padding-left: 4px;
+}
+section ul ~ p {
+    background-color: rgb(138, 6, 6);
+}
+
+li.italic{font-style: italic;}
+li.oblique{font-style: oblique;}
+li.oblique10deg{font-style: oblique 10deg;}
+
+li.bold   {font-weight:bold   ;}
+li.bolder {font-weight:bolder ;}
+li.lighter{font-weight:lighter;}
+li.wgt800 {font-weight:800;}
+li.inherit{font-weight:inherit;}
+li.initial{font-weight:initial;}
+li.unset  {font-weight:unset  ;}
+
+
+
+article{background:lightsteelblue;}
+article :nth-child(even){background:magenta;}
+article .one li:nth-child(-n+3){background:SandyBrown;}
+article .two li:nth-child(1){background:green;}
+article .two .pickme:nth-child(odd){background:Beige;}

@@ -1,0 +1,87 @@
+h1:nth-of-type(1){
+    background-color: grey;
+    color: white;
+    padding: 50px;
+    margin: 50px;
+ }
+ a:nth-of-type(2n+1){
+     color: black;
+     border-width: 2px;
+     border-color: black;
+     border-style: dotted;
+ }
+ img{
+     width: 400px;
+     height: 200px;
+     border: 5px blue solid;
+     padding: 2px 8px 14px;
+ }
+ #welcome {
+     border: 50px;
+     border-color: black;
+     border: dashed;
+     color: black;
+     padding: 2px 8px 14px 20px;
+ }
+ .item:nth-of-type(-n+2){
+     background-color: aquamarine;
+     border-width: 2px;
+     border-color: black;
+     border-style: double;
+     margin-top: 2px;
+     margin-right: 2px;
+     margin-bottom: 20px;
+     margin-left: -2px;
+ }
+ .table-header:nth-of-type(2n){
+     border-width: 2px;
+     border-color: black;
+     border-style: groove;
+     margin: 2px 8px;
+ }
+
+.table-data:nth-last-of-type(2n+1){
+    border-width: 5px;
+    border-color: gray;
+    border-style: solid;
+    margin: 2px 8px 14px;
+}
+.table-data:nth-last-of-type(1){
+    border-width: 2px;
+    border-color: black;
+    border-style: ridge;
+    margin: 2px 8px 14px;
+}
+
+dl#term dd{
+  background-color: blue;
+}
+
+li.item p{
+    background-color: rgb(170, 50, 220, .6);
+}
+div #multiple-id-selector p{
+    background-color: rgb(170, 50, 220, .6);
+}
+
+a {color: blue;}
+a[href^="#"] { background-color: gold;}
+a[href*="example"] {background-color: silver;}
+a[href*="insensitive" i] {color: cyan;}
+a[href*="cAsE" s] {color: pink;}
+a[href$=".org"] {color: red;}
+a[href^="https"][href$=".org"] {color: green;}
+
+div[lang] {font-weight: bold;}
+div:not([lang]) {font-style: italic;}
+div[lang~="en-us"] {color: blue;}
+div[lang="pt"] {color: green;}
+div[lang|="zh"] {color: red;}
+
+.serif{font-family: Times, "Times New Roman", Georgia, serif;}
+.sansserif{font-family: Verdana, Arial, Helvetica, sans-serif;}
+.monospace{font-family: "Lucida Console", Courier, monospace;}
+.cursive{font-family: cursive;}
+.fantasy{font-family: fantasy;}
+.emoji{font-family: emoji;}
+

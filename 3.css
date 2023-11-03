@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* Webfont: Yekan */
+@font-face {
+	font-family: 'Yekan';
+	src:	url('Yekan-Font/Yekan.eot'); /* IE9 Compat Modes */
+	src:	url('Yekan-Font/?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('Yekan-Font/Yekan.woff2') format('woff2'), /* Modern Browsers */
+			url('Yekan-Font/Yekan.woff') format('woff'), /* Modern Browsers */
+			url('Yekan-Font/Yekan.otf') format('opentype'), /* Open Type Font */	
+			url('Yekan-Font/Yekan.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	font-display: auto;
+}
+
+* {
+    color: black;
+}
+*.card {
+      color: brown;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -.02em;
+}
+h1 {
+    background-color: grey;
+    color: white;
+    padding: 50px;
+    margin: 50px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    font-size: 20px;
+ }
+ a {
+     color: black;
+     border-width: 5px;
+     border-style: solid;
+     border-color: black;
+ }
+ dd {
+     border-width: 50px;
+     border-style: groove;
+     border-top-color: rgb(170, 50, 220, .6);
+     border-right-color: green;
+     border-bottom-color: red;
+     border-left-color: yellow;
+ }
+ img{
+     width: 400px;
+     height: 200px;
+     border: 5px blue solid;
+ }
+ #Feature {
+     border: 50px;
+     border-color: black;
+     border: dashed;
+     color: black;
+ }
+ .product {
+     background-color: aquamarine;
+     border-width: 2px;
+     border-color: black;
+     border-style: double;
+ }
+ .category {
+     border-width: 2px;
+     border-color: black;
+     border-style: groove;
+ }
+ bdo[dir] {
+    color: brown;
+    font-family: 'Yekan';
+ }
+ img[src="product2.jpeg"] {
+    width: 600px;
+    height: 400px;
+}
+b[class*="address"] {
+    color: blue;
+}
+b[class~="address"] {
+    color: lightcoral;
+}
+b[class$="address"] {
+    color: lightgreen;
+}
+b[class^="address"] {
+    color: lightpink;
+}
+
+li.normal-variant{font-variant:normal;}
+li.smallcaps-variant{font-variant:smallcaps;}
+li.initial-variant{font-variant:initial;}
+li.inherit-variant{font-variant:inherit;}
+
+li.lngh-normal{line-height:normal;}
+li.lnhg2{line-height:2;}
+li.lnhg50percent{line-height:50%;}
+
+li.txtr-none{text-transform:none;}
+li.txtr-capitalize{text-transform:capitalize;}
+li.txtr-uppercase{text-transform:uppercase;}
+li.txtr-lowercase{text-transform:lowercase;}

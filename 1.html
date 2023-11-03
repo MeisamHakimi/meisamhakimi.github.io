@@ -2,62 +2,34 @@
 <html>
 <head>
  <title>My HTML Page</title>
- <style type="text/css">
-    h1 {
-       background-color: grey;
-       color: white;
-       padding: 50px;
-       margin: 50px;
-    }
-    a {
-        color: black;
-        border-width: 2px;
-        border-color: black;
-        border-style: dotted;
-    }
-    img{
-        width: 400px;
-        height: 200px;
-        border: 5px blue solid;
-    }
-    #welcome {
-        border: 50px;
-        border-color: black;
-        border: dashed;
-        color: black;
-    }
-    .item {
-        background-color: aquamarine;
-        border-width: 2px;
-        border-color: black;
-        border-style: double;
-    }
-    .table-header {
-        border-width: 2px;
-        border-color: black;
-        border-style: groove;
-    }
-    .table-data {
-        border-width: 2px;
-        border-color: black;
-        border-style: ridge;
-    }
- </style>
+ <link rel="stylesheet" href="1.css">
 </head>
 
 <body>
  <header>
     <nav>
-         <a href="index.html">HOME</a>
+         <a href="index.html" class="serif">HOME</a>
     </nav>
-    <h1 id="welcome">Welcome to my  HTML page!</h1>
+    <h1 id="welcome" class="sansserif">Welcome to my  HTML page!</h1>
  </header>
  <main>
   <section>
-   <h2>Section 1</h2>
+   <h2 class="monospace">Section 1</h2>
    <p>This is the first section of my  HTML page.</p>
+   <div>
+     <div id="multiple-id-selector">
+       <p class="cursive"> div1 p1 </p>
+       <p class="fantasy"> div1 p2 </p>
+       <p class="emoji"> div1 p3 </p>
+     </div>
+     <div>
+       <p> div2 p1 </p>
+       <p> div2 p2 </p>
+       <p> div2 p3 </p>
+      </div>
+   </div>
    <ul>
-    <li class="item">Item 1</li>
+    <li class="item"><p>Item 1</p></li>
     <li class="item">Item 2</li>
     <li class="item">Item 3</li>
    </ul>
@@ -104,12 +76,24 @@
    <blockquote>This is another blockquote.</blockquote>
    <q>This is another quotation.</q>
    <bdo dir="rtl">This is another text in right-to-left direction.</bdo>
-   <dl>
+   <dl id="term">
     <dt>Term 1</dt>
     <dd>Definition 1</dd>
     <dt>Term 2</dt>
     <dd>Definition 2</dd>
    </dl>
+   <h3> Related link </h3>
+   <ul>
+     <li><a href="#internal">Internal link</a></li>
+     <li><a href="http://example.com">Example link</a></li>
+     <li><a href="#InSensitive">Insensitive internal link</a></li>
+     <li><a href="http://example.org">Example org link</a></li>
+     <li><a href="https://example.org">Example https org link</a></li>
+   </ul>
+   <div lang="en-us en-gb en-au en-nz">Hello World!</div>
+   <div lang="pt">Olá Mundo!</div>
+   <div lang="zh-CN">世界您好！</div>
+   <div lang="zh-TW">世界您好！</div>
   </section>
   <aside>
    <h4>Aside section</h4>
