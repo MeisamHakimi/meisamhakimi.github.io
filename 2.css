@@ -1,3 +1,14 @@
+@import 'layer.css' layer(utilities);
+
+:root{ --background-color-of-header: #91c1d1;}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color:var(--background-color-of-header);
+}
+
+
 h1 {
     background-color: grey;
     color: white;

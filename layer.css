@@ -1,0 +1,13 @@
+@layer utilities {
+    .padding-sm {
+      padding: .5rem;
+    }
+    .padding-lg {
+      padding: .8rem;
+    }
+}
+@layer {
+  p {
+    margin-block: 1rem;
+  }
+}
