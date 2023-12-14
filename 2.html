@@ -9,7 +9,7 @@
     <nav>
          <a href="index.html">HOME</a>
     </nav>
-    <h1>Hotel XYZ</h1>
+    <h1 onclick="changeHeaderText()">Hotel XYZ</h1>
  </header>
 
  <section>
@@ -18,11 +18,11 @@
 
    <h3>Our Rooms</h3>
    <ul>
-      <li class="item bolder">Single Room - $100 per night</li>
+      <li class="item bolder" onclick="changeRoomText()">Single Room - $100 per night</li>
       <li class="item lighter">Double Room - $150 per night</li>
       <li class="item wgt800">Deluxe Room - $200 per night</li>
    </ul>
-
+   
    <h3>Services</h3>
    <ol>
       <li class="service italic bold">24-hour room service</li>
@@ -31,8 +31,9 @@
       <li class="service unset">Tour desk</li>
       <li class="service">Car rental</li>
    </ol>
-
-   <h3>Contact Us</h3>
+   <button onclick="addService()">Add New Service</button>
+   
+   <h3 id="contactUs">Contact Us</h3>
    <p>You can reach us at:</p>
    <address id="address">
       Hotel XYZ<br>
@@ -41,17 +42,18 @@
       Phone: (555) 123-4567<br>
       Email: info@hotelxyz.com
    </address>
-
+   
    <img src="hotel.jpeg" alt="Hotel XYZ">
-
+   
    <blockquote>
       <p>"A wonderful stay at Hotel XYZ. The staff was friendly and the room was comfortable."</p>
       <footer>- John Doe</footer>
    </blockquote>
-   </section>
-   <section>
-      <article class="result">
-         <ol class="one">
+   <button onclick="addQuote()">Add New Quote</button>
+</section>
+<section>
+   <article class="result">
+      <ol class="one">
            <li>room1</li>
            <li class="pickme">room2</li>
            <li>room3</li>
@@ -59,21 +61,23 @@
            <li class="pickme">room5</li>
            <li>room6</li>
          </ol>
-           <p>room7</p>
-           <p>room8</p>
-           <p>room9</p>
-           <ol class="two">
-             <li>room9 3/4</li>
-             <li class="pickme">room10</li>
-             <li class="pickme">room11</li>
-             <li>room12</li>
-             <li class="pickme">room13</li>
-           </ol>
-         </article>
+         <p>room7</p>
+         <p>room8</p>
+         <p>room9</p>
+         <ol class="two">
+            <li>room9 3/4</li>
+            <li class="pickme">room10</li>
+            <li class="pickme">room11</li>
+            <li>room12</li>
+            <li class="pickme">room13</li>
+         </ol>
+      </article>
    </section>
+   <button onclick="addRoom()">Add New Room</button>
 
  <footer>
   <p> Hotel XYZ. All rights reserved.</p>
  </footer>
+ <script src="2.js"></script>
 </body>
 </html>

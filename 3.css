@@ -110,3 +110,61 @@ li.txtr-none{text-transform:none;}
 li.txtr-capitalize{text-transform:capitalize;}
 li.txtr-uppercase{text-transform:uppercase;}
 li.txtr-lowercase{text-transform:lowercase;}
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  header, footer {
+    grid-column: 1 / -1;
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+  }
+
+  section {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  aside, article {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  footer {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  blockquote {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  bdo {
+    direction: rtl;
+    display: block;
+  }
+
+  dl {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  main:last-of-type {
+    grid-column: 1 / -1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
